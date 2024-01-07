@@ -1,0 +1,36 @@
+{
+    "name": "task-manager-with-express",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+      "start": "nodemon server.js",
+      "test": "cross-env NODE_ENV=test jest --testTimeout=5000 --detectOpenHandles"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "dotenv": "^16.0.3",
+      "express": "^4.18.2",
+      "mongoose": "^6.8.0",
+      "morgan": "^1.10.0"
+    },
+    "devDependencies": {
+      "cross-env": "^7.0.3",
+      "jest": "^29.3.1",
+      "mongodb-memory-server": "^8.10.2",
+      "nodemon": "^2.0.20",
+      "supertest": "^6.3.3"
+    },
+    "jest": {
+      "testEnvironment": "node",
+      "coveragePathIgnorePatterns": [
+        "/node_modules/"
+      ],
+      "setupFilesAfterEnv": [
+        "<rootDir>/tests/bootstrap.js"
+      ]
+    }
+  }
+  
